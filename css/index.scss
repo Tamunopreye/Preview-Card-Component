@@ -1,0 +1,81 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    
+    
+    main {
+        background-color: blue;
+        height: 100vh;
+        overflow: auto;
+        
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            margin: 80px auto;
+            color: #fff;
+            border-radius: 20px;
+            // padding: 20px;
+            
+            .column {
+                padding: 20px;
+                overflow: auto;
+            
+                
+                button {
+                    background-color: transparent;
+                    margin-top: 20px;
+                    padding: 10px;
+                    border-radius: 15px;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    font-size: 1em;
+                }
+
+                button:hover {
+                    background-color: #fff;
+                }
+            }
+
+            h2 {
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .col-1  {
+                background-color: hsl(31, 77%, 52%);
+            }
+            .col-1 > button:hover {
+                color: hsl(31, 77%, 52%);;
+            } 
+
+            .col-2 {
+                background-color: hsl(184, 100%, 22%);
+            }
+            .col-2 > button:hover {
+                color: hsl(184, 100%, 22%);
+            }
+
+            .col-3 {
+                background-color: hsl(179, 100%, 13%);
+            }
+
+            .col-3 > button:hover {
+                color: hsl(179, 100%, 13%);
+            }
+        }
+
+        // For screens less than 580px
+        @media (max-width: 580px) {
+                .container {
+                    flex-wrap: wrap;
+                }
+        }
+    }
+}

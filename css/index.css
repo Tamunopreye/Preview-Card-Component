@@ -1,0 +1,87 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+}
+
+body main {
+  background-color: blue;
+  height: 100vh;
+  overflow: auto;
+}
+
+body main .container {
+  max-width: 600px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 80px auto;
+  color: #fff;
+  border-radius: 20px;
+}
+
+body main .container .column {
+  padding: 20px;
+  overflow: auto;
+}
+
+body main .container .column button {
+  background-color: transparent;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1em;
+}
+
+body main .container .column button:hover {
+  background-color: #fff;
+}
+
+body main .container h2 {
+  text-transform: uppercase;
+}
+
+body main .container p {
+  font-size: 1.2rem;
+}
+
+body main .container .col-1 {
+  background-color: #e38826;
+}
+
+body main .container .col-1 > button:hover {
+  color: #e38826;
+}
+
+body main .container .col-2 {
+  background-color: #006970;
+}
+
+body main .container .col-2 > button:hover {
+  color: #006970;
+}
+
+body main .container .col-3 {
+  background-color: #004241;
+}
+
+body main .container .col-3 > button:hover {
+  color: #004241;
+}
+
+@media (max-width: 580px) {
+  body main .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=index.css.map */

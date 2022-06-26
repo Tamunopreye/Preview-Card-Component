@@ -6,7 +6,7 @@ body {
     
     
     main {
-        background-color: blue;
+        // background-color: blue;
         height: 100vh;
         overflow: auto;
         
@@ -50,6 +50,7 @@ body {
 
             .col-1  {
                 background-color: hsl(31, 77%, 52%);
+                border-radius:  10px 0 0 10px;
             }
             .col-1 > button:hover {
                 color: hsl(31, 77%, 52%);;
@@ -64,6 +65,7 @@ body {
 
             .col-3 {
                 background-color: hsl(179, 100%, 13%);
+                border-radius:   0 10px 10px 0;
             }
 
             .col-3 > button:hover {
@@ -74,7 +76,21 @@ body {
         // For screens less than 580px
         @media (max-width: 580px) {
                 .container {
+                    max-width: 300px;
                     flex-wrap: wrap;
+                
+                    .column {
+                        .col-1  {
+                            background-color: hsl(31, 77%, 52%);
+                            border-radius:  10px 10px 0 0;
+                        }
+
+                        .col-3 {
+                            background-color: hsl(179, 100%, 13%);
+                            border-radius:  0 0 10px 10px;
+                        }
+            
+                    }
                 }
         }
     }
